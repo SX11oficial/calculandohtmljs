@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Desafio 1</h1>
+   <div>
+    <input id="A" type="number" placeholder="numero 1"> 
+    <input id="B" type="number" placeholder="numero 2">
+    <button onclick="verificarVariaveis()">verificar</button>
+    <p id="mensagemErro" style="color: red;"></p>
+   </div>
+   <script>
+   function verificarVariaveis() {
+    var a = parseInt(document.getElementById('A').value);
+    var b = parseInt(document.getElementById('B').value);
+
+    if (a < b) {
+      document.getElementById('mensagemErro').innerHTML = "Erro: A e menor que B!";
+    } else {
+      document.getElementById('mensagemErro').innerHTML = "ok esta certo";
+    }
+  }
+</script>
+</body>
+</html>
